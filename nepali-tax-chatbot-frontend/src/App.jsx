@@ -36,7 +36,7 @@ const ChatLayout = React.memo(({ children }) => (
 const ChatHeader = React.memo(() => (
   <header className="chat-header">
     <div className="chat-header__content">
-      <h1 className="chat-header__title">Nepali Tax Assistant</h1>
+      <h1 className="chat-header__title">Tax Assistant</h1>
       <p className="chat-header__subtitle">Expert guidance on Nepal tax laws</p>
     </div>
     <div className="chat-header__decoration">
@@ -117,7 +117,7 @@ const MessageList = React.memo(({ messages, currentUser, isLoading, backendError
       {messages.length === 0 && !isLoading && !backendError && (
         <div className="welcome-screen">
           <div className="welcome-content">
-            <h2>Welcome to Nepali Tax Assistant</h2>
+            <h2>Welcome to Tax Assistant</h2>
             <p>Ask me anything about:</p>
             <ul className="suggested-questions">
               {['Income tax rates', 'VAT regulations', 'Tax filing deadlines', 'Business tax obligations'].map((question) => (
