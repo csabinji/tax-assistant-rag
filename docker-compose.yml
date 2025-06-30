@@ -1,0 +1,25 @@
+version: '3.8'
+services:
+  backend:
+    build:
+      context: ./nepali-tax-chatbot-backend
+    container_name: nepali-tax-chatbot-backend
+    environment:
+      - OPENROUTER_API_KEY=${OPENROUTER_API_KEY}
+      - CHROMA_TELEMETRY_ENABLED=False
+    volumes:
+      - ./nepali-tax-chatbot-backend/chroma_db:/app/chroma_db
+      - ./nepali-tax-chatbot-backend/nepali_tax_guide.pdf:/app/nepali_tax_guide.pdf
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./nepali-tax-chatbot-frontend
+    container_name: nepali-tax-chatbot-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    restart: unless-stopped

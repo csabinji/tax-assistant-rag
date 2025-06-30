@@ -1,0 +1,317 @@
+2025-06-30 21:45:39,686 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 21:45:39,686 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-06-30 21:45:48,146 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-30 21:45:48,341 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2025-06-30 21:45:48,342 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2025-06-30 21:46:20,446 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 21:46:20,446 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-06-30 21:46:28,990 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-30 21:46:29,109 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2025-06-30 21:46:29,110 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2025-06-30 21:46:59,858 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-06-30 21:47:04,715 - app - ERROR - Error initializing LangChain components: Found no NVIDIA driver on your system. Please check that you have an NVIDIA GPU and installed a driver from http://www.nvidia.com/Download/index.aspx
+2025-06-30 21:47:38,433 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-06-30 21:47:42,977 - app - ERROR - Error initializing LangChain components: Found no NVIDIA driver on your system. Please check that you have an NVIDIA GPU and installed a driver from http://www.nvidia.com/Download/index.aspx
+2025-06-30 21:48:02,754 - app - ERROR - Chatbot initialization failed
+2025-06-30 21:48:54,077 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 21:48:54,077 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-06-30 21:48:58,588 - app - INFO - HuggingFace Embeddings model loaded
+2025-06-30 21:48:59,102 - app - INFO - LLM initialized using OpenRouter model: mistralai/mistral-7b-instruct:free
+2025-06-30 21:48:59,103 - app - INFO - Loading document from nepali_tax_guide.pdf (Type: pdf)
+2025-06-30 21:49:02,056 - app - INFO - Loaded 99 chunks from nepali_tax_guide.pdf
+2025-06-30 21:49:02,056 - app - INFO - Loading existing vectorstore...
+2025-06-30 21:49:02,502 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-30 21:49:02,696 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2025-06-30 21:49:02,696 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2025-06-30 21:49:02,701 - app - INFO - LangChain components initialized successfully with OpenRouter and HuggingFace Embeddings, using multiple document types.
+2025-06-30 21:49:08,372 - app - INFO - Processing new query: hello
+2025-06-30 21:49:08,497 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event CollectionQueryEvent: capture() takes 1 positional argument but 3 were given
+2025-06-30 21:49:10,565 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 21:49:11,945 - app - INFO - Successfully processed query: hello
+2025-06-30 21:49:27,267 - app - INFO - Processing new query: Is tax system of nepal good ?
+2025-06-30 21:49:29,688 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 21:49:42,835 - app - INFO - Successfully processed query: Is tax system of nepal good ?
+2025-06-30 21:51:02,540 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 21:51:02,540 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-06-30 21:51:39,412 - app - INFO - HuggingFace Embeddings model loaded
+2025-06-30 21:51:39,914 - app - INFO - LLM initialized using OpenRouter model: mistralai/mistral-7b-instruct:free
+2025-06-30 21:51:39,916 - app - INFO - Loading document from nepali_tax_guide.pdf (Type: pdf)
+2025-06-30 21:51:42,897 - app - INFO - Loaded 99 chunks from nepali_tax_guide.pdf
+2025-06-30 21:51:42,898 - app - INFO - Loading existing vectorstore...
+2025-06-30 21:51:43,394 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-30 21:51:43,572 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2025-06-30 21:51:43,573 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2025-06-30 21:51:43,580 - app - INFO - LangChain components initialized successfully with OpenRouter and HuggingFace Embeddings, using multiple document types.
+2025-06-30 21:52:26,839 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 21:52:26,839 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-06-30 21:52:32,237 - app - INFO - HuggingFace Embeddings model loaded
+2025-06-30 21:52:32,716 - app - INFO - LLM initialized using OpenRouter model: mistralai/mistral-7b-instruct:free
+2025-06-30 21:52:32,717 - app - INFO - Loading document from nepali_tax_guide.pdf (Type: pdf)
+2025-06-30 21:52:35,693 - app - INFO - Loaded 99 chunks from nepali_tax_guide.pdf
+2025-06-30 21:52:35,694 - app - INFO - Loading existing vectorstore...
+2025-06-30 21:52:36,222 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-30 21:52:36,437 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2025-06-30 21:52:36,438 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2025-06-30 21:52:36,450 - app - INFO - LangChain components initialized successfully with OpenRouter and HuggingFace Embeddings, using multiple document types.
+2025-06-30 21:53:29,913 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 21:53:29,914 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-06-30 21:53:34,492 - app - INFO - HuggingFace Embeddings model loaded
+2025-06-30 21:53:34,781 - app - INFO - LLM initialized using OpenRouter model: mistralai/mistral-7b-instruct:free
+2025-06-30 21:53:34,781 - app - INFO - Loading document from nepali_tax_guide.pdf (Type: pdf)
+2025-06-30 21:53:37,171 - app - INFO - Loaded 99 chunks from nepali_tax_guide.pdf
+2025-06-30 21:53:37,172 - app - INFO - Loading existing vectorstore...
+2025-06-30 21:53:37,201 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-30 21:53:37,294 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2025-06-30 21:53:37,294 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2025-06-30 21:53:37,298 - app - INFO - LangChain components initialized successfully with OpenRouter and HuggingFace Embeddings, using multiple document types.
+2025-06-30 21:54:26,616 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 21:54:26,616 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-06-30 21:54:30,808 - app - INFO - HuggingFace Embeddings model loaded
+2025-06-30 21:54:31,102 - app - INFO - LLM initialized using OpenRouter model: mistralai/mistral-7b-instruct:free
+2025-06-30 21:54:31,103 - app - INFO - Loading document from nepali_tax_guide.pdf (Type: pdf)
+2025-06-30 21:54:33,625 - app - INFO - Loaded 99 chunks from nepali_tax_guide.pdf
+2025-06-30 21:54:33,626 - app - INFO - Loading existing vectorstore...
+2025-06-30 21:54:33,647 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-30 21:54:33,750 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2025-06-30 21:54:33,751 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2025-06-30 21:54:33,756 - app - INFO - LangChain components initialized successfully with OpenRouter and HuggingFace Embeddings, using multiple document types.
+2025-06-30 21:55:21,580 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 21:55:21,580 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-06-30 21:55:26,514 - app - INFO - HuggingFace Embeddings model loaded
+2025-06-30 21:55:26,991 - app - INFO - LLM initialized using OpenRouter model: mistralai/mistral-7b-instruct:free
+2025-06-30 21:55:26,992 - app - INFO - Loading document from nepali_tax_guide.pdf (Type: pdf)
+2025-06-30 21:55:29,884 - app - INFO - Loaded 99 chunks from nepali_tax_guide.pdf
+2025-06-30 21:55:29,884 - app - INFO - Loading existing vectorstore...
+2025-06-30 21:55:30,033 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2025-06-30 21:55:30,034 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2025-06-30 21:55:30,043 - app - INFO - LangChain components initialized successfully with OpenRouter and HuggingFace Embeddings, using multiple document types.
+2025-06-30 21:55:38,578 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 21:55:38,578 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-06-30 21:55:43,068 - app - INFO - HuggingFace Embeddings model loaded
+2025-06-30 21:55:43,338 - app - INFO - LLM initialized using OpenRouter model: mistralai/mistral-7b-instruct:free
+2025-06-30 21:55:43,338 - app - INFO - Loading document from nepali_tax_guide.pdf (Type: pdf)
+2025-06-30 21:55:45,817 - app - INFO - Loaded 99 chunks from nepali_tax_guide.pdf
+2025-06-30 21:55:45,818 - app - INFO - Loading existing vectorstore...
+2025-06-30 21:55:45,914 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2025-06-30 21:55:45,915 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2025-06-30 21:55:45,919 - app - INFO - LangChain components initialized successfully with OpenRouter and HuggingFace Embeddings, using multiple document types.
+2025-06-30 21:55:54,381 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 21:55:54,381 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-06-30 21:55:58,730 - app - INFO - HuggingFace Embeddings model loaded
+2025-06-30 21:55:59,220 - app - INFO - LLM initialized using OpenRouter model: mistralai/mistral-7b-instruct:free
+2025-06-30 21:55:59,221 - app - INFO - Loading document from nepali_tax_guide.pdf (Type: pdf)
+2025-06-30 21:56:02,086 - app - INFO - Loaded 99 chunks from nepali_tax_guide.pdf
+2025-06-30 21:56:02,086 - app - INFO - Loading existing vectorstore...
+2025-06-30 21:56:02,250 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2025-06-30 21:56:02,251 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2025-06-30 21:56:02,255 - app - INFO - LangChain components initialized successfully with OpenRouter and HuggingFace Embeddings, using multiple document types.
+2025-06-30 21:56:10,077 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 21:56:10,077 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-06-30 21:56:13,878 - app - INFO - HuggingFace Embeddings model loaded
+2025-06-30 21:56:14,171 - app - INFO - LLM initialized using OpenRouter model: mistralai/mistral-7b-instruct:free
+2025-06-30 21:56:14,172 - app - INFO - Loading document from nepali_tax_guide.pdf (Type: pdf)
+2025-06-30 21:56:16,732 - app - INFO - Loaded 99 chunks from nepali_tax_guide.pdf
+2025-06-30 21:56:16,732 - app - INFO - Loading existing vectorstore...
+2025-06-30 21:56:16,834 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2025-06-30 21:56:16,834 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2025-06-30 21:56:16,838 - app - INFO - LangChain components initialized successfully with OpenRouter and HuggingFace Embeddings, using multiple document types.
+2025-06-30 21:57:21,410 - app - INFO - Processing new query: pl
+2025-06-30 21:57:21,787 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event CollectionQueryEvent: capture() takes 1 positional argument but 3 were given
+2025-06-30 21:57:24,477 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 21:57:26,504 - app - INFO - Successfully processed query: pl
+2025-06-30 22:13:41,513 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 22:13:41,513 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-06-30 22:13:45,863 - app.config - INFO - HuggingFace Embeddings model loaded
+2025-06-30 22:13:46,294 - app.config - INFO - LLM initialized using OpenRouter model: mistralai/mistral-7b-instruct:free
+2025-06-30 22:13:46,295 - app.config - INFO - Loading document from nepali_tax_guide.pdf (Type: pdf)
+2025-06-30 22:13:49,012 - app.config - INFO - Loaded 99 chunks from nepali_tax_guide.pdf
+2025-06-30 22:13:49,013 - app.config - INFO - Loading existing vectorstore...
+2025-06-30 22:13:49,156 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2025-06-30 22:13:49,156 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2025-06-30 22:13:49,161 - app.config - INFO - LangChain components initialized successfully with OpenRouter and HuggingFace Embeddings, using multiple document types.
+2025-06-30 22:15:22,806 - app.config - INFO - Processing new query: yo
+2025-06-30 22:15:22,993 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event CollectionQueryEvent: capture() takes 1 positional argument but 3 were given
+2025-06-30 22:15:25,533 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 22:15:27,689 - app.config - INFO - Successfully processed query: yo
+2025-06-30 22:18:46,293 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 22:18:46,293 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-06-30 22:18:51,161 - app.config - INFO - HuggingFace Embeddings model loaded
+2025-06-30 22:18:51,690 - app.config - INFO - LLM initialized using OpenRouter model: mistralai/mistral-7b-instruct:free
+2025-06-30 22:18:51,691 - app.config - INFO - Loading document from nepali_tax_guide.pdf (Type: pdf)
+2025-06-30 22:18:54,747 - app.config - INFO - Loaded 99 chunks from nepali_tax_guide.pdf
+2025-06-30 22:18:54,747 - app.config - INFO - Loading existing vectorstore...
+2025-06-30 22:18:54,967 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2025-06-30 22:18:54,967 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2025-06-30 22:18:54,972 - app.config - INFO - LangChain components initialized successfully with OpenRouter and HuggingFace Embeddings, using multiple document types.
+2025-06-30 22:19:03,408 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 22:19:03,408 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-06-30 22:19:07,746 - app.config - INFO - HuggingFace Embeddings model loaded
+2025-06-30 22:19:08,085 - app.config - INFO - LLM initialized using OpenRouter model: mistralai/mistral-7b-instruct:free
+2025-06-30 22:19:08,085 - app.config - INFO - Loading document from nepali_tax_guide.pdf (Type: pdf)
+2025-06-30 22:19:10,972 - app.config - INFO - Loaded 99 chunks from nepali_tax_guide.pdf
+2025-06-30 22:19:10,972 - app.config - INFO - Loading existing vectorstore...
+2025-06-30 22:19:11,139 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2025-06-30 22:19:11,140 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2025-06-30 22:19:11,150 - app.config - INFO - LangChain components initialized successfully with OpenRouter and HuggingFace Embeddings, using multiple document types.
+2025-06-30 22:19:24,452 - app.config - INFO - Processing new query: What is VAT in Nepal?
+2025-06-30 22:19:24,775 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event CollectionQueryEvent: capture() takes 1 positional argument but 3 were given
+2025-06-30 22:19:27,300 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 22:19:28,741 - app.config - INFO - Successfully processed query: What is VAT in Nepal?
+2025-06-30 22:22:48,291 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 22:22:48,291 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-06-30 22:22:52,518 - app.config - INFO - HuggingFace Embeddings model loaded
+2025-06-30 22:22:53,069 - app.config - INFO - LLM initialized using OpenRouter model: mistralai/mistral-7b-instruct:free
+2025-06-30 22:22:53,070 - app.config - INFO - Loading document from nepali_tax_guide.pdf (Type: pdf)
+2025-06-30 22:22:56,085 - app.config - INFO - Loaded 99 chunks from nepali_tax_guide.pdf
+2025-06-30 22:22:56,086 - app.config - INFO - Total loaded document chunks: 99
+2025-06-30 22:22:56,086 - app.config - INFO - Loading existing vectorstore...
+2025-06-30 22:22:56,266 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2025-06-30 22:22:56,266 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2025-06-30 22:22:56,275 - app.config - INFO - Vectorstore loaded with 0 documents.
+2025-06-30 22:22:56,278 - app.config - INFO - LangChain components initialized successfully with OpenRouter and HuggingFace Embeddings, using multiple document types.
+2025-06-30 22:24:34,657 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 22:24:34,657 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-06-30 22:24:39,631 - app.config - INFO - HuggingFace Embeddings model loaded
+2025-06-30 22:24:40,142 - app.config - INFO - LLM initialized using OpenRouter model: mistralai/mistral-7b-instruct:free
+2025-06-30 22:24:40,143 - app.config - INFO - Loading document from nepali_tax_guide.pdf (Type: pdf)
+2025-06-30 22:24:43,228 - app.config - INFO - Loaded 99 chunks from nepali_tax_guide.pdf
+2025-06-30 22:24:43,228 - app.config - INFO - Total loaded document chunks: 99
+2025-06-30 22:24:43,229 - app.config - INFO - Loading existing vectorstore...
+2025-06-30 22:24:43,348 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2025-06-30 22:24:43,348 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2025-06-30 22:24:43,355 - app.config - INFO - Vectorstore loaded with 0 documents.
+2025-06-30 22:24:43,358 - app.config - INFO - LangChain components initialized successfully with OpenRouter and HuggingFace Embeddings, using multiple document types.
+2025-06-30 22:25:22,970 - app.config - INFO - Processing new query: Income tax rates
+2025-06-30 22:25:23,085 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event CollectionQueryEvent: capture() takes 1 positional argument but 3 were given
+2025-06-30 22:25:25,197 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 22:25:27,455 - app.config - INFO - Successfully processed query: Income tax rates
+2025-06-30 22:25:43,208 - app.config - INFO - Processing new query: In india
+2025-06-30 22:25:45,471 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 22:25:48,023 - app.config - INFO - Successfully processed query: In india
+2025-06-30 22:26:53,801 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 22:26:53,801 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-06-30 22:26:58,574 - app.config - INFO - HuggingFace Embeddings model loaded
+2025-06-30 22:26:59,101 - app.config - INFO - LLM initialized using OpenRouter model: mistralai/mistral-7b-instruct:free
+2025-06-30 22:26:59,102 - app.config - INFO - Loading document from nepali_tax_guide.pdf (Type: pdf)
+2025-06-30 22:26:59,103 - app.config - INFO - Loading document from nepali_tax_guide2.pdf (Type: pdf)
+2025-06-30 22:27:03,463 - app.config - INFO - Loaded 99 chunks from nepali_tax_guide.pdf
+2025-06-30 22:28:15,647 - app.config - INFO - Loaded 2170 chunks from nepali_tax_guide2.pdf
+2025-06-30 22:28:15,648 - app.config - INFO - Total loaded document chunks: 2269
+2025-06-30 22:28:15,648 - app.config - INFO - Loading existing vectorstore...
+2025-06-30 22:28:15,864 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2025-06-30 22:28:15,864 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2025-06-30 22:28:15,878 - app.config - INFO - Vectorstore loaded with 0 documents.
+2025-06-30 22:28:15,888 - app.config - INFO - LangChain components initialized successfully with OpenRouter and HuggingFace Embeddings, using multiple document types.
+2025-06-30 22:28:24,154 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 22:28:24,155 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-06-30 22:28:29,188 - app.config - INFO - HuggingFace Embeddings model loaded
+2025-06-30 22:28:29,638 - app.config - INFO - LLM initialized using OpenRouter model: mistralai/mistral-7b-instruct:free
+2025-06-30 22:28:29,639 - app.config - INFO - Loading document from nepali_tax_guide.pdf (Type: pdf)
+2025-06-30 22:28:29,640 - app.config - INFO - Loading document from nepali_tax_guide2.pdf (Type: pdf)
+2025-06-30 22:28:34,544 - app.config - INFO - Loaded 99 chunks from nepali_tax_guide.pdf
+2025-06-30 22:29:42,535 - app.config - INFO - Loaded 2170 chunks from nepali_tax_guide2.pdf
+2025-06-30 22:29:42,537 - app.config - INFO - Total loaded document chunks: 2269
+2025-06-30 22:29:42,537 - app.config - INFO - Loading existing vectorstore...
+2025-06-30 22:29:42,795 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2025-06-30 22:29:42,795 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2025-06-30 22:29:42,807 - app.config - INFO - Vectorstore loaded with 0 documents.
+2025-06-30 22:29:42,811 - app.config - INFO - LangChain components initialized successfully with OpenRouter and HuggingFace Embeddings, using multiple document types.
+2025-06-30 22:29:42,814 - app.config - INFO - Processing new query: hello
+2025-06-30 22:29:43,150 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event CollectionQueryEvent: capture() takes 1 positional argument but 3 were given
+2025-06-30 22:29:45,298 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 22:29:47,463 - app.config - INFO - Successfully processed query: hello
+2025-06-30 22:29:52,375 - app.config - INFO - Processing new query: load
+2025-06-30 22:29:54,365 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 22:29:55,026 - app.config - INFO - Successfully processed query: load
+2025-06-30 22:29:59,931 - app.config - INFO - Processing new query: Income tax
+2025-06-30 22:30:01,580 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 22:30:02,604 - app.config - INFO - Successfully processed query: Income tax
+2025-06-30 22:30:20,441 - app.config - INFO - Processing new query: Income tax rates
+2025-06-30 22:30:22,983 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 22:30:25,334 - app.config - INFO - Successfully processed query: Income tax rates
+2025-06-30 22:31:54,109 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 22:31:54,109 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-06-30 22:31:59,618 - app.config - INFO - HuggingFace Embeddings model loaded
+2025-06-30 22:32:00,145 - app.config - INFO - LLM initialized using OpenRouter model: mistralai/mistral-7b-instruct:free
+2025-06-30 22:32:00,146 - app.config - INFO - Loading document from nepali_tax_guide.pdf (Type: pdf)
+2025-06-30 22:32:00,147 - app.config - INFO - Loading document from nepali_tax_guide2.pdf (Type: pdf)
+2025-06-30 22:32:06,795 - app.config - INFO - Loaded 99 chunks from nepali_tax_guide.pdf
+2025-06-30 22:33:16,623 - app.config - INFO - Loaded 2170 chunks from nepali_tax_guide2.pdf
+2025-06-30 22:33:16,624 - app.config - INFO - Total loaded document chunks: 2269
+2025-06-30 22:33:16,625 - app.config - INFO - Loading existing vectorstore...
+2025-06-30 22:33:17,105 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2025-06-30 22:33:17,106 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2025-06-30 22:33:17,119 - app.config - INFO - Vectorstore loaded with 0 documents.
+2025-06-30 22:33:17,122 - app.config - INFO - LangChain components initialized successfully with OpenRouter and HuggingFace Embeddings, using multiple document types.
+2025-06-30 22:37:29,924 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 22:37:29,925 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-06-30 22:37:34,248 - app.config - INFO - HuggingFace Embeddings model loaded
+2025-06-30 22:37:34,633 - app.config - INFO - LLM initialized using OpenRouter model: mistralai/mistral-7b-instruct:free
+2025-06-30 22:37:34,634 - app.config - INFO - Loading document from nepali_tax_guide.pdf (Type: pdf)
+2025-06-30 22:37:34,635 - app.config - INFO - Loading document from nepali_tax_guide2.pdf (Type: pdf)
+2025-06-30 22:37:38,376 - app.config - INFO - Loaded 99 chunks from nepali_tax_guide.pdf
+2025-06-30 22:38:59,858 - app.config - INFO - Loaded 2170 chunks from nepali_tax_guide2.pdf
+2025-06-30 22:38:59,859 - app.config - INFO - Total loaded document chunks: 2269
+2025-06-30 22:38:59,859 - app.config - INFO - Creating new vectorstore...
+2025-06-30 22:39:00,066 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2025-06-30 22:39:00,066 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2025-06-30 22:42:36,249 - app.config - INFO - Vectorstore created with 2269 documents.
+2025-06-30 22:42:36,253 - app.config - INFO - LangChain components initialized successfully with OpenRouter and HuggingFace Embeddings, using multiple document types.
+2025-06-30 22:42:46,879 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 22:42:46,880 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-06-30 22:42:51,927 - app.config - INFO - HuggingFace Embeddings model loaded
+2025-06-30 22:42:52,683 - app.config - INFO - LLM initialized using OpenRouter model: mistralai/mistral-7b-instruct:free
+2025-06-30 22:42:52,684 - app.config - INFO - Loading document from nepali_tax_guide.pdf (Type: pdf)
+2025-06-30 22:42:52,686 - app.config - INFO - Loading document from nepali_tax_guide2.pdf (Type: pdf)
+2025-06-30 22:43:02,730 - app.config - INFO - Loaded 99 chunks from nepali_tax_guide.pdf
+2025-06-30 22:44:17,586 - app.config - INFO - Loaded 2170 chunks from nepali_tax_guide2.pdf
+2025-06-30 22:44:17,587 - app.config - INFO - Total loaded document chunks: 2269
+2025-06-30 22:44:17,587 - app.config - INFO - Loading existing vectorstore...
+2025-06-30 22:44:17,741 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2025-06-30 22:44:17,741 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2025-06-30 22:44:17,793 - app.config - INFO - Vectorstore loaded with 2269 documents.
+2025-06-30 22:44:17,801 - app.config - INFO - LangChain components initialized successfully with OpenRouter and HuggingFace Embeddings, using multiple document types.
+2025-06-30 22:44:33,827 - app.config - INFO - Processing new query: Hello
+2025-06-30 22:44:34,386 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event CollectionQueryEvent: capture() takes 1 positional argument but 3 were given
+2025-06-30 22:44:36,917 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 22:44:39,180 - app.config - INFO - Successfully processed query: Hello
+2025-06-30 22:44:48,233 - app.config - INFO - Processing new query: Do you know me ?
+2025-06-30 22:44:50,947 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 22:44:54,329 - app.config - INFO - Successfully processed query: Do you know me ?
+2025-06-30 22:45:25,329 - app.config - INFO - Processing new query: How much tax do I need to pay if I make 200000 per month ?
+2025-06-30 22:45:27,464 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 22:45:30,577 - app.config - INFO - Successfully processed query: How much tax do I need to pay if I make 200000 per month ?
+2025-06-30 22:45:47,665 - app.config - INFO - Processing new query: How much tax do I need to pay if I make 200000 per month from a job?
+2025-06-30 22:45:50,338 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 22:45:52,286 - app.config - INFO - Successfully processed query: How much tax do I need to pay if I make 200000 per month from a job?
+2025-06-30 22:46:29,080 - app.config - INFO - Processing new query: Is income tax different for married and unmarried person ?
+2025-06-30 22:46:32,118 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 22:46:35,051 - app.config - INFO - Successfully processed query: Is income tax different for married and unmarried person ?
+2025-06-30 22:50:41,086 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 22:50:41,086 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-06-30 22:50:46,663 - app.config - INFO - HuggingFace Embeddings model loaded
+2025-06-30 22:50:47,303 - app.config - INFO - LLM initialized using OpenRouter model: mistralai/mistral-7b-instruct:free
+2025-06-30 22:50:47,304 - app.config - INFO - Loading document from nepali_tax_guide.pdf (Type: pdf)
+2025-06-30 22:50:47,305 - app.config - INFO - Loading document from nepali_tax_guide2.pdf (Type: pdf)
+2025-06-30 22:50:54,361 - app.config - INFO - Loaded 99 chunks from nepali_tax_guide.pdf
+2025-06-30 22:52:04,504 - app.config - INFO - Loaded 2170 chunks from nepali_tax_guide2.pdf
+2025-06-30 22:52:04,505 - app.config - INFO - Total loaded document chunks: 2269
+2025-06-30 22:52:04,505 - app.config - INFO - Loading existing vectorstore...
+2025-06-30 22:52:04,627 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2025-06-30 22:52:04,627 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2025-06-30 22:52:04,680 - app.config - INFO - Vectorstore loaded with 2269 documents.
+2025-06-30 22:52:04,685 - app.config - INFO - LangChain components initialized successfully with OpenRouter and HuggingFace Embeddings, using multiple document types.
+2025-06-30 22:52:13,245 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 22:52:13,245 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-06-30 22:52:18,842 - app.config - INFO - HuggingFace Embeddings model loaded
+2025-06-30 22:52:19,284 - app.config - INFO - LLM initialized using OpenRouter model: mistralai/mistral-7b-instruct:free
+2025-06-30 22:52:19,286 - app.config - INFO - Loading document from nepali_tax_guide.pdf (Type: pdf)
+2025-06-30 22:52:19,293 - app.config - INFO - Loading document from nepali_tax_guide2.pdf (Type: pdf)
+2025-06-30 22:52:25,403 - app.config - INFO - Loaded 99 chunks from nepali_tax_guide.pdf
+2025-06-30 22:53:33,850 - app.config - INFO - Loaded 2170 chunks from nepali_tax_guide2.pdf
+2025-06-30 22:53:33,851 - app.config - INFO - Total loaded document chunks: 2269
+2025-06-30 22:53:33,852 - app.config - INFO - Loading existing vectorstore...
+2025-06-30 22:53:33,964 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2025-06-30 22:53:33,965 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2025-06-30 22:53:34,000 - app.config - INFO - Vectorstore loaded with 2269 documents.
+2025-06-30 22:53:34,004 - app.config - INFO - LangChain components initialized successfully with OpenRouter and HuggingFace Embeddings, using multiple document types.
