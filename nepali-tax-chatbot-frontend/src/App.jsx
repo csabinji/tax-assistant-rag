@@ -1,9 +1,6 @@
 // src/App.jsx - Enhanced Professional Nepali Tax Chatbot Frontend
 import React, { useState, useRef, useEffect, useCallback } from 'react';
 import './App.css';
-
-// --- Icon Components (Optimized with memo) ---
-// These are good as they are, simple SVG icons.
 const SendIcon = React.memo(() => (
   <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
     <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
@@ -28,7 +25,6 @@ const WarningIcon = React.memo(() => (
   </svg>
 ));
 
-// --- Optimized Components ---
 const ChatLayout = React.memo(({ children }) => (
   <div className="chat-app-container">{children}</div>
 ));
@@ -222,7 +218,6 @@ const MessageInput = React.memo(({ inputMessage, onInputChange, onSendMessage, i
   );
 });
 
-// --- Main App Component ---
 function App() {
   const [messages, setMessages] = useState([]);
   const [inputMessage, setInputMessage] = useState('');
@@ -231,19 +226,15 @@ function App() {
   const [backendError, setBackendError] = useState(null);
   const [connectionStatus, setConnectionStatus] = useState('connected');
 
-  // Consider moving this to an environment variable in a real app
-  const backendUrl = "http://localhost:5000";
+  const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
-  // State to hold the last successful query for retrying
   const [lastQuery, setLastQuery] = useState('');
 
-  const handleSendMessage = useCallback(async (queryToSend = inputMessage) => { // Allow specifying query for retry
-    if ((queryToSend.trim() || lastQuery.trim()) && !isLoading) { // Check both current input and last query
+  const handleSendMessage = useCallback(async (queryToSend = inputMessage) => {
+    if ((queryToSend.trim() || lastQuery.trim()) && !isLoading) {
       setBackendError(null);
       setIsLoading(true);
-
-      const messageText = queryToSend.trim() || lastQuery.trim(); // Use current input or last successful query
-
+      const messageText = queryToSend.trim() || lastQuery.trim();
       const userMessage = {
         id: Date.now(),
         user: username,
@@ -251,41 +242,32 @@ function App() {
         timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
         type: 'user'
       };
-      
-      // Only add user message if it's a new input, not a retry of a previous message
       if (queryToSend.trim() === inputMessage.trim() && !lastQuery.trim()) {
         setMessages(prev => [...prev, userMessage]);
       } else if (lastQuery.trim() && queryToSend.trim() === lastQuery.trim()) {
-        // If retrying, don't add duplicate user message, just clear error and show loading
         setMessages(prev => {
           const lastMsg = prev[prev.length - 1];
           if (lastMsg && lastMsg.type === 'error') {
-            // Remove the error message if it was the last one
             return prev.slice(0, -1);
           }
           return prev;
         });
       } else {
-         setMessages(prev => [...prev, userMessage]); // For new messages after error
+         setMessages(prev => [...prev, userMessage]);
       }
-      
       setInputMessage('');
-      setLastQuery(messageText); // Store the query for potential retries
-
+      setLastQuery(messageText);
       try {
         const response = await fetch(`${backendUrl}/chat`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ query: messageText }), // Use messageText for the body
-          signal: AbortSignal.timeout(15000) // 15s timeout
+          body: JSON.stringify({ query: messageText }),
+          signal: AbortSignal.timeout(15000)
         });
-
         if (!response.ok) {
           throw new Error(`Server responded with ${response.status}: ${response.statusText || 'Unknown Error'}`);
         }
-
         const data = await response.json();
-
         const botMessage = {
           id: Date.now() + 1,
           user: 'Tax Assistant',
@@ -294,18 +276,15 @@ function App() {
           type: 'bot',
           context: data.context || []
         };
-        
         setMessages(prev => [...prev, botMessage]);
         setConnectionStatus('connected');
-        setLastQuery(''); // Clear last query on successful response
+        setLastQuery('');
       } catch (err) {
-        console.error("API Error:", err);
         setBackendError(err.message);
         setConnectionStatus('disconnected');
-        // Add a "failed to send" message to the chat
         setMessages(prev => [...prev, {
           id: Date.now(),
-          user: 'System', // Or Tax Assistant with an error type
+          user: 'System',
           text: `Failed to get a response. Error: ${err.message}. Please try again.`,
           timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
           type: 'error'
@@ -316,28 +295,21 @@ function App() {
     }
   }, [inputMessage, username, isLoading, backendUrl, lastQuery]);
 
-  // Handle retry from the error message
   const handleRetryLastMessage = useCallback(() => {
     if (lastQuery) {
-      // Remove the last 'error' type message if it exists before retrying
       setMessages(prev => prev.filter(msg => msg.type !== 'error'));
-      handleSendMessage(lastQuery); // Re-send the last query
+      handleSendMessage(lastQuery);
     }
   }, [lastQuery, handleSendMessage]);
 
 
-  // Connection status indicator effect
   useEffect(() => {
     let timer;
     if (connectionStatus === 'disconnected') {
       timer = setTimeout(() => {
         setConnectionStatus('reconnecting');
-        // In a real application, you might attempt a small ping to the backend here
-        // or trigger a more sophisticated reconnection logic.
-        // For this example, we just change the text.
       }, 5000);
     }
-    
     return () => clearTimeout(timer);
   }, [connectionStatus]);
 
